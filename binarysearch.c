@@ -12,6 +12,7 @@ int binary(int low, int high)
 }
 
 void main(){
-    key=2;
-    printf("%d",binary(0,n));
+    printf("Enter the item to search");
+    scanf("%d",&key);
+    binary(0,n)?printf("Item found"):printf("Item not fount");
 }
