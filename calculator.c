@@ -8,7 +8,7 @@ int main(){
     int a,b;
     char var;
     while(1){
-    printf("Enter the Expression (ex.1+2)(enter q to exit)\n");
+    printf("Enter the Expression (ex.1+2)\n");
     scanf("%d %c%d",&a,&var,&b);
     switch(var){
         case ('+'):printf("%d%c%d=%d",a,var,b,a+b);
@@ -19,11 +19,13 @@ int main(){
         break;
         case ('/'):printf("%d%c%d=%d",a,var,b,a/b);
         break;
-        case ('q'):return 0;
-        break;
-        default: printf("Invalid expression");
+        default: printf("\nInvalid expression");
         break;
     }
+    printf("\nDo you want to exit(Y/N)");
+    scanf(" %c",&var);
+    if(var=='y' || var =='Y')
+    {break;}
     getch(); 
     }
 }
